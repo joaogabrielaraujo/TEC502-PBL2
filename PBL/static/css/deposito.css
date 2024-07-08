@@ -1,0 +1,91 @@
+/* deposito.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #5dbea3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5adbb5;
+}
+
+/* Estilo adicional para uma aparência mais bonita */
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #5adbb5;
+  outline: none;
+  box-shadow: 0 0 5px lightgray;
+}
+
+#message {
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .container {
+      margin: 20px;
+      padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+      font-size: 14px;
+  }
+
+  button {
+      font-size: 14px;
+  }
+}

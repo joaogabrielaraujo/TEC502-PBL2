@@ -1,0 +1,47 @@
+<!-- home.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Home - {{ nome_banco }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ nome_banco }}</h1>
+            <div class="actions">
+                <button id="transferButton">Transferência</button>
+                <button id="depositButton">Depósito</button>
+            </div>
+        </div>
+        <p>Bem-vindo à página inicial do {{ nome_banco }}.</p>
+        
+        <!-- Conteúdo das contas -->
+        <div class="contas">
+            <h2>Contas</h2>
+            <ul>
+                {% for conta in contas %}
+                <li>
+                    <div class="conta-info">
+                        <h3>Conta {{ conta.numero_conta }}</h3>
+                        <p>Saldo: R$ {{ conta.saldo }}</p>
+                        <p>Cliente(s): {{ conta.clientes|join(', ') }}</p>
+                        <p>Nome do Banco: {{ conta.nome_banco }}</p>
+                    </div>
+                    <div class="conta-actions">
+                        <button data-conta="{{ conta.numero_conta }}">Saque</button>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- Fim do conteúdo das contas -->
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>

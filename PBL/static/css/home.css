@@ -1,0 +1,138 @@
+/* home.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #333;
+  margin: 0;
+}
+
+.actions button {
+  padding: 10px 15px;
+  background-color: #5dbea3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.actions button:hover {
+  background-color: #5adbb5;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+}
+
+.contas {
+  margin-top: 20px;
+}
+
+.contas h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.conta-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.conta-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.conta-actions button {
+  padding: 10px 15px;
+  background-color: #5dbea3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.conta-actions button:hover {
+  background-color: #5adbb5;
+}
+
+/* Estilo adicional para uma aparência mais bonita */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #5adbb5;
+}
+
+@media (max-width: 600px) {
+  .container {
+      margin: 20px;
+      padding: 15px;
+  }
+
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .actions {
+      margin-top: 10px;
+  }
+
+  .actions button {
+      margin-left: 0;
+      margin-top: 5px;
+  }
+
+  .contas li {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .conta-actions {
+      margin-top: 10px;
+  }
+}

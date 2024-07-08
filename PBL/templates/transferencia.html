@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferência - {{ nome_banco }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"> <!-- Utilizando o mesmo CSS da home -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/transferencia.css') }}"> <!-- CSS específico para a página de transferência -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ nome_banco }}</h1>
+            <div class="actions">
+                <button id="homeButton">Home</button>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </div>
+
+        <h2>Transferência</h2>
+
+        <div class="transfer-form">
+            <div class="form-group">
+                <label for="nomeBancoDestino">Nome do Banco de Destino:</label>
+                <input type="text" id="nomeBancoDestino" name="nome_banco_destino" required>
+            </div>
+            <div class="form-group">
+                <label for="numeroContaDestino">Número da Conta de Destino:</label>
+                <input type="text" id="numeroContaDestino" name="numero_conta_destino" required>
+            </div>
+            <div class="form-group">
+                <label for="valorTotal">Valor Total a Transferir:</label>
+                <input type="number" id="valorTotal" name="valor_conta_destino" step="0.01" readonly>
+            </div>
+
+            <!-- Lista de contas do cliente -->
+            <div class="contas">
+                <h3>Suas Contas:</h3>
+                <ul id="contasList">
+                    {% for conta in contas %}
+                    <li>
+                        <div class="conta-info">
+                            <h4>Conta {{ conta.numero_conta }} - {{ conta.nome_banco }}</h4>
+                            <p>Saldo: R$ {{ conta.saldo|round(2) }}</p>
+                            <p>Cliente(s): {{ conta.clientes|join(', ') }}</p>
+                        </div>
+                        <div class="conta-actions">
+                            <input type="text" id="valorConta{{ loop.index }}" class="valor-conta" placeholder="Valor a Transferir" data-conta="{{ conta.numero_conta }}" data-banco="{{ conta.nome_banco }}">
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <button id="realizarTransferencia">Realizar Transferência</button>
+        </div>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/transferencia.js') }}"></script> <!-- JavaScript específico para a página de transferência -->
+</body>
+</html>

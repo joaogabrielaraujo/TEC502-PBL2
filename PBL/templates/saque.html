@@ -1,0 +1,32 @@
+<!-- saque.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saque - {{ nome_banco }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/saque.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Saque em Conta</h1>
+        <form id="saqueForm">
+            <div class="form-group">
+                <label for="numeroConta">Número da Conta:</label>
+                <input type="text" id="numeroConta" name="numero_conta" required>
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Realizar Saque</button>
+            </div>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/saque.js') }}"></script>
+</body>
+</html>

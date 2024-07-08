@@ -1,0 +1,34 @@
+<!-- deposito.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depósito - {{ nome_banco }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/deposito.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Depósito - {{ nome_banco }}</h1>
+        <form id="depositForm">
+            <div class="form-group">
+                <label for="numeroConta">Número da Conta</label>
+                <input type="text" id="numeroConta" name="numero_conta" required>
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor</label>
+                <input type="number" id="valor" name="valor" required>
+            </div>
+            <div class="form-group">
+                <label for="nomeBanco">Nome do Banco</label>
+                <input type="text" id="nomeBanco" name="nome_banco"  required>
+            </div>
+            <button type="submit">Depositar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/deposito.js') }}"></script>
+</body>
+</html>
