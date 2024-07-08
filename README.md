@@ -21,7 +21,7 @@ Os desafios principais incluíam a prevenção de movimentações de dinheiro al
 
 # Sumário
 - [Indrodução](#introducao)
-- [Api](#Api)
+- [Aplicação - API](#Aplicação---API)
   -   [2PC - Two-Phase Commit](#2pc---two-phase-commit)
   -   [Rotas para Gerenciamento de Contas](#rotas-para-gerenciamento-de-contas)
   -   [Rotas Designadas para Lógica Bancária](#rotas-designadas-para-lógica-bancária)
@@ -30,7 +30,7 @@ Os desafios principais incluíam a prevenção de movimentações de dinheiro al
 - [Conclusão](#conclusão)
 
 
-# Api
+# Aplicação - API
 ## 2PC - Two-Phase Commit 
 O código apresentado utiliza um método de "two phase commit" (compromisso em duas fases) em conjunto com bloqueios (locks) para garantir a consistência das operações bancárias distribuídas.
 
