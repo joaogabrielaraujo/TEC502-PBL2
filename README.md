@@ -16,7 +16,7 @@ Com o objetivo de atender aos requisitos solicitados, foi estabelecido um consó
 
 Os desafios principais incluíam a prevenção de movimentações de dinheiro além do saldo disponível e a eliminação do risco de duplo gasto, onde o mesmo dinheiro poderia ser transferido para mais de uma conta simultaneamente.
 
-Este relatório detalha a arquitetura e os mecanismos implementados para assegurar a integridade e a segurança das transações, bem como os resultados obtidos com a solução desenvolvida.
+
 
 # Api
 ## 2PC - Two-Phase Commit 
