@@ -21,9 +21,9 @@ Os desafios principais incluíam a prevenção de movimentações de dinheiro al
 - [Api](#Api)
   -   [2PC - Two-Phase Commit](#2pc---two-phase-commit)
   -   [Rotas para Gerenciamento de Contas](#rotas-para-gerenciamento-de-contas)
-  -   [Rotas Designadas para Lógica Bancária](#rotas-designadas-para-logica-bancaria)
+  -   [Rotas Designadas para Lógica Bancária](#rotas-designadas-para-lógica-bancária)
   -   [Rotas Designadas para Interface](#rotas-designadas-para-interface)
-- [Conclusão](#conclusao)
+- [Conclusão](#conclusão)
 
 
 # Api
