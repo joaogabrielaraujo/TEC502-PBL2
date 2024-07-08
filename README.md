@@ -53,31 +53,31 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 * Função desfazer_transferencia() e desfazer_conta_externa(): Essas funções são acionadas em caso de erro durante a preparação ou confirmação das transações. Elas revertem quaisquer modificações feitas durante a preparação, garantindo que nenhuma mudança inconsistente seja persistida no sistema.
 
 ## Rotas para Gerenciamento de Contas
-### Rota para cadastrar uma pessoa física:
+### Rota para cadastrar uma *pessoa física*:
 * `POST` /cadastro_pessoa_fisica
 * Recebe dados JSON (nome, CPF, senha) e cadastra uma pessoa física.
 * Verifica se todos os dados obrigatórios foram fornecidos e se o cliente já está cadastrado.
   Em caso de sucesso, retorna uma mensagem de confirmação e detalhes da conta criada.
 
-### Rota para cadastrar uma pessoa jurídica:
+### Rota para cadastrar uma *pessoa jurídica*:
 * `POST` /cadastro_pessoa_juridica
 * Recebe dados JSON (nome, CNPJ, senha) e cadastra uma pessoa jurídica.
 * Verifica se todos os dados obrigatórios foram fornecidos e se o cliente já está cadastrado.
   Em caso de sucesso, retorna uma mensagem de confirmação e detalhes da conta criada.
   
-### Rota para cadastrar uma conta conjunta:
+### Rota para cadastrar uma *conta conjunta*:
 * `POST` /cadastro_conta_conjunta
 * Recebe dados JSON (identificador1, identificador2, senha) e cadastra uma conta conjunta.
 * Verifica se os identificadores e a senha foram fornecidos e se os clientes existem.
   Em caso de sucesso, retorna uma mensagem de confirmação e detalhes da conta criada.
   
-### Rota para fazer login:
+### Rota para fazer *login*:
 * `POST` /login
 * Recebe dados JSON (identificador, senha) e autentica o cliente.
 * Verifica se o identificador e a senha foram fornecidos.
 * Em caso de sucesso, retorna uma mensagem de login bem-sucedido e detalhes do cliente.
   
-### Rota para fazer logout:
+### Rota para fazer *logout*:
 * `POST` /logout
 * Desloga o cliente atualmente logado.
 * Retorna uma mensagem de confirmação de logout.
@@ -111,7 +111,8 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 * Retorna o nome do banco atual.
 
 ## Rotas Designadas para Lógica Bancária
-### Rota responsável por realizar um depósito em qualquer conta que um banco possua
+
+### Rota responsável por realizar um *depósito*
 * Endpoint: /deposito
 * Método HTTP: `POST`
 * Funcionalidade:
@@ -120,14 +121,14 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 *    Se o banco for o mesmo em que o cliente está logado (banco.nome), o depósito é realizado diretamente na conta interna usando métodos do objeto banco.
       Caso contrário, delega a operação para o método deposito_outro_banco do objeto banco, que lida com depósitos em bancos externos.
      
-### Rota responsável por realizar um saque em um banco que um cliente esteja logado
+### Rota responsável por realizar um *saque*
 * Endpoint: /saque
 * Método HTTP: `POST`
 * Funcionalidade:
 *   Recebe dados em formato JSON contendo o número da conta e o valor a ser sacado.
 *   Valida os dados e executa o saque na conta correspondente usando métodos do objeto banco.
   
-### Rota responsável por preparar uma transferência de uma conta de um banco externo
+### Rota responsável por *preparar uma transferência*
 * Endpoint: /preparar_transferencia
 * Método HTTP: `POST`
 * Funcionalidade:
@@ -136,7 +137,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
     Se o banco for o mesmo em que o cliente está logado (banco.nome), prepara a transferência usando métodos do objeto banco.
     Caso contrário, delega a operação para o método preparar_conta_externa do objeto banco, que prepara a conta externa para a transferência.
   
-### Rota responsável por confirmar uma transferência de uma conta de um banco externo
+### Rota responsável por *confirmar uma transferência*
 * Endpoint: /confirmar_transferencia
 * Método HTTP: `POST`
 * Funcionalidade:
@@ -145,7 +146,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
     Se o banco for o mesmo em que o cliente está logado (banco.nome), confirma a transferência usando métodos do objeto banco.
     Caso contrário, delega a operação para o método confirmacao_conta_externa do objeto banco, que confirma a transferência na conta externa.
   
-### Rota responsável por desfazer alterações em uma conta de um banco externo
+### Rota responsável por *desfazer alterações*
 * Endpoint: /desfazer_transferencia
 * Método HTTP: `POST`
 * Funcionalidade:
@@ -154,7 +155,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
     Se o banco for o mesmo em que o cliente está logado (banco.nome), desfaz as alterações usando métodos do objeto banco.
     Caso contrário, delega a operação para o método desfazer_conta_externa do objeto banco, que desfaz as alterações na conta externa.
   
-### Rota responsável por realizar a transferência entre contas
+### Rota responsável por realizar a *transferência*
 * Endpoint: /transferir
 * Método HTTP: `POST`
 * Funcionalidade:
