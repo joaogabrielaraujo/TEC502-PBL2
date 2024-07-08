@@ -16,7 +16,7 @@ Com o objetivo de atender aos requisitos solicitados, foi estabelecido um consó
 
 Os desafios principais incluíam a prevenção de movimentações de dinheiro além do saldo disponível e a eliminação do risco de duplo gasto, onde o mesmo dinheiro poderia ser transferido para mais de uma conta simultaneamente.
 <div align ="center">
-  <img width="600px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/HTTP.png">
+  <img width="800px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/HTTP.png">
 </div>
 
 # Sumário
