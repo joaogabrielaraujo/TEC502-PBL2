@@ -9,17 +9,21 @@
 
 
 
-## Introdução 
+# Introdução 
 Este relatório apresenta a solução desenvolvida para implementar um sistema de transações bancárias semelhante ao Pix, em um país que não possui um banco central. A principal demanda do governo era a criação de um sistema que permitisse a realização de pagamentos, depósitos e transferências entre contas de diferentes bancos, sem utilizar recursos centralizados para controlar as transações.
 
 Com o objetivo de atender aos requisitos solicitados, foi estabelecido um consórcio bancário que contratou uma equipe de especialistas em sistemas distribuídos. A solução proposta foi baseada em um sistema distribuído que garante a comunicação eficiente e segura entre os bancos, permitindo que os clientes realizem transações atômicas sobre suas contas, sejam elas de pessoa física (particulares ou conjuntas) ou jurídica.
 
 Os desafios principais incluíam a prevenção de movimentações de dinheiro além do saldo disponível e a eliminação do risco de duplo gasto, onde o mesmo dinheiro poderia ser transferido para mais de uma conta simultaneamente.
 
-#Sumário
+# Sumário
+- [Indrodução](#introducao)
 - [Api](#Api)
   -   [2PC - Two-Phase Commit](#2pc---two-phase-commit)
   -   [Rotas para Gerenciamento de Contas](#rotas-para-gerenciamento-de-contas)
+  -   [Rotas Designadas para Lógica Bancária](#rotas-designadas-para-logica-bancaria)
+  -   [Rotas Designadas para Interface](#rotas-designadas-para-interface)
+- [Conclusão](#conclusao)
 
 
 # Api
