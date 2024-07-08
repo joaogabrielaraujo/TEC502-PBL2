@@ -15,6 +15,9 @@ Este relatório apresenta a solução desenvolvida para implementar um sistema d
 Com o objetivo de atender aos requisitos solicitados, foi estabelecido um consórcio bancário que contratou uma equipe de especialistas em sistemas distribuídos. A solução proposta foi baseada em um sistema distribuído que garante a comunicação eficiente e segura entre os bancos, permitindo que os clientes realizem transações atômicas sobre suas contas, sejam elas de pessoa física (particulares ou conjuntas) ou jurídica.
 
 Os desafios principais incluíam a prevenção de movimentações de dinheiro além do saldo disponível e a eliminação do risco de duplo gasto, onde o mesmo dinheiro poderia ser transferido para mais de uma conta simultaneamente.
+<div align ="center">
+  <img width="600px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/HTTP.png">
+</div>
 
 # Sumário
 - [Indrodução](#introducao)
