@@ -16,6 +16,10 @@ Com o objetivo de atender aos requisitos solicitados, foi estabelecido um consó
 
 Os desafios principais incluíam a prevenção de movimentações de dinheiro além do saldo disponível e a eliminação do risco de duplo gasto, onde o mesmo dinheiro poderia ser transferido para mais de uma conta simultaneamente.
 
+#Sumário
+- [Api](api)
+  -   [2PC - Two-Phase Commit](2pc---two-phase-commit)
+  -   [Rotas para Gerenciamento de Contas](rotas-para-gerenciamento-de-contas)
 
 
 # Api
