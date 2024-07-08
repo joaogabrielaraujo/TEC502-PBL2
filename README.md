@@ -221,3 +221,6 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 </div>
 
 # Conclusão
+A implementação bem-sucedida deste sistema distribuído para transações bancárias possibilita a realização de pagamentos, depósitos e transferências entre contas de diferentes bancos sem a necessidade de um banco central. A solução desenvolvida atendeu plenamente aos requisitos estabelecidos pelo governo, proporcionando uma plataforma robusta e segura para os clientes realizarem transações atômicas de forma eficiente.
+
+Ao adotar uma abordagem distribuída, foi possível garantir a integridade das transações, prevenindo movimentações de dinheiro além do saldo disponível e eliminando o risco de duplo gasto. A comunicação entre os bancos foi estabelecida de maneira eficaz, assegurando que as transações fossem processadas de forma rápida e segura, independentemente da instituição bancária dos envolvidos.
