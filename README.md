@@ -223,6 +223,31 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
   <img width="700px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaTransferencia.jpg">
 </div>
 
+## Execução via Docker
+Para executar sem precisar contruir uma imagem, já existe uma imagem feita que está hospedada no site https://www.docker.com/
+
+*Siga pos seguintes passos para executar o broker:*
+
+```
+docker pull joaogabrielaraujo/bank
+```
+```
+docker run --network=host -it -e NUMERO_BANCO=<número do banco> -e IP_BANCO1=<ip do banco 1> -e IP_BANCO2=<ip do banco 2> -e IP_BANCO3=<ip do banco 3> joaogabrielaraujo/bank
+```
+
+Tomando exemplo de números de ip's fictícios: Computador 1 = `250.0.0.1`, Computador 2 =`250.0.0.2`, Computador 3 = `250.0.0.3`
+* *comando do computador 1*:
+```
+docker run --network=host - it - NUMERO_BANCO=1 -e IP_BANCO2=250.0.0.2 -e IP_BANCO3=250.0.0.3 joaogabrielaraujo/bank
+```
+* *comando do computador 2*:
+```
+docker run --network=host - it - NUMERO_BANCO=2 -e IP_BANCO1=250.0.0.1 -e IP_BANCO3=250.0.0.3 joaogabrielaraujo/bank
+```
+* *comando do computador 3*:
+```
+docker run --network=host - it - NUMERO_BANCO=3 -e IP_BANCO1=250.0.0.1 -e IP_BANCO2=250.0.0.2 joaogabrielaraujo/bank
+```
 # Conclusão
 A implementação bem-sucedida deste sistema distribuído para transações bancárias possibilita a realização de pagamentos, depósitos e transferências entre contas de diferentes bancos sem a necessidade de um banco central. A solução desenvolvida atendeu plenamente aos requisitos estabelecidos pelo governo, proporcionando uma plataforma robusta e segura para os clientes realizarem transações atômicas de forma eficiente.
 
