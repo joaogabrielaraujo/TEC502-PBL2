@@ -167,7 +167,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 * Funcionalidade:
     Renderiza o template login.html, que geralmente contém formulários para login.
 <div align ="center">
-  <img width="800px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaLogin.jpg">
+  <img width="600px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaLogin.jpg">
 </div>
 
 ### Rota para a página de Home
@@ -178,7 +178,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
     Realiza chamadas HTTP para endpoints específicos do banco usando requests.get.
     Se obter sucesso nas chamadas, renderiza o template home.html passando o nome do banco e informações das contas.
 <div align ="center">
-  <img width="800px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaHome.jpg">
+  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaHome.jpg">
 </div>
 
 ### Rota para a página de cadastro
@@ -187,7 +187,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 * Funcionalidade:
     Renderiza o template cadastro.html, utilizado para cadastro de novos clientes.
 <div align ="center">
-  <img width="800px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaCadastro.jpg">
+  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaCadastro.jpg">
 </div>
 
 ### Rota para renderizar a página de depósito
@@ -217,7 +217,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
     Se obter sucesso nas chamadas, renderiza o template transferencia.html passando o nome do banco e informações das contas.
   
 <div align ="center">
-  <img width="800px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaTransferencia.jpg">
+  <img width="700px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaTransferencia.jpg">
 </div>
 
 # Conclusão
