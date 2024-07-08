@@ -26,6 +26,7 @@ Os desafios principais incluíam a prevenção de movimentações de dinheiro al
   -   [Rotas para Gerenciamento de Contas](#rotas-para-gerenciamento-de-contas)
   -   [Rotas Designadas para Lógica Bancária](#rotas-designadas-para-lógica-bancária)
   -   [Rotas Designadas para Interface](#rotas-designadas-para-interface)
+- [Execução via Docker](#execução-via-docker)
 - [Conclusão](#conclusão)
 
 
