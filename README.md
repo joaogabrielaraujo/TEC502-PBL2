@@ -34,7 +34,7 @@ Os desafios principais incluíam a prevenção de movimentações de dinheiro al
 ## 2PC - Two-Phase Commit 
 O código apresentado utiliza um método de "two phase commit" (compromisso em duas fases) em conjunto com bloqueios (locks) para garantir a consistência das operações bancárias distribuídas.
 
-O "two phase commit" é um protocolo utilizado para garantir a atomicidade das transações distribuídas, ou seja, garantir que todas as operações relacionadas a uma transação sejam executadas com sucesso ou que nenhuma delas seja executada. No contexto do código fornecido:
+O "two phase commit" é um protocolo utilizado para garantir a atomicidade das transações distribuídas, ou seja, garantir que todas as operações relacionadas a uma transação sejam executadas com sucesso ou que nenhuma delas seja executada. 
 ### Preparação (Fase 1):
 * Função preparar_transferencia() e preparar_conta_externa(): Essas funções são responsáveis por preparar as contas envolvidas na transação. Isso inclui verificar se as contas existem, aplicar bloqueios (lock.acquire()) para garantir exclusividade durante a modificação da conta e realizar qualquer outra preparação necessária, como verificar saldos suficientes para transferências.
 
