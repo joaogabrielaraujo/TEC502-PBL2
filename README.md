@@ -172,7 +172,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 * Funcionalidade:
     Renderiza o template login.html, que geralmente contém formulários para login.
 <div align ="center">
-  <img width="600px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaLogin.jpg">
+  <img width="600px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/telaLogin.jpg">
 </div>
 
 ### Rota para a página de Home
@@ -183,7 +183,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
     Realiza chamadas HTTP para endpoints específicos do banco usando requests.get.
     Se obter sucesso nas chamadas, renderiza o template home.html passando o nome do banco e informações das contas.
 <div align ="center">
-  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaHome.jpg">
+  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/telaHome.jpg">
 </div>
 
 ### Rota para a página de cadastro
@@ -192,7 +192,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 * Funcionalidade:
     Renderiza o template cadastro.html, utilizado para cadastro de novos clientes.
 <div align ="center">
-  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaCadastro.jpg">
+  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/telaCadastro.jpg">
 </div>
 
 ### Rota para renderizar a página de depósito
@@ -201,7 +201,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 * Funcionalidade:
     Renderiza o template deposito.html, que provavelmente contém formulários para realizar depósitos em contas.
 <div align ="center">
-  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaDeposito.jpg">
+  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/telaDeposito.jpg">
 </div>
 
 ### Rota para acessar a página de saque
@@ -210,7 +210,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
 * Funcionalidade:
     Renderiza o template saque.html, onde são disponibilizados formulários para realizar saques de contas bancárias.
 <div align ="center">
-  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaSaque.jpg">
+  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/telaSaque.jpg">
 </div>
 
 ### Rota para a página de Transferência
@@ -222,7 +222,7 @@ Se ocorrer qualquer falha durante a preparação ou confirmação das transaçõ
     Se obter sucesso nas chamadas, renderiza o template transferencia.html passando o nome do banco e informações das contas.
   
 <div align ="center">
-  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/PBLrede2/blob/main/PBL/img/telaTransferencia.jpg">
+  <img width="500px" align="center" src="https://github.com/joaogabrielaraujo/TEC502-PBL2/blob/main/PBL/img/telaTransferencia.jpg">
 </div>
 
 ## Execução via Docker
