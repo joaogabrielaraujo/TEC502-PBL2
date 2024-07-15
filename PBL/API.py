@@ -10,20 +10,20 @@ app = Flask(__name__, template_folder='templates', static_folder='static')
 NUMERO_BANCO = os.getenv('NUMERO_BANCO', '1')
 
 host = "0.0.0.0"
-#IP_BANCO1 = os.getenv('IP_BANCO1', "localhost")
-IP_BANCO1 = os.getenv('IP_BANCO1', "0.0.0.0")
+IP_BANCO1 = os.getenv('IP_BANCO1', "localhost")
+#IP_BANCO1 = os.getenv('IP_BANCO1', "0.0.0.0")
 NOME_BANCO1 = os.getenv('NOME_BANCO1', 'Banco 1')
 PORTA_BANCO1 = os.getenv('PORTA_BANCO1', '2525')
 URL_BANCO1 = f"http://{IP_BANCO1}:{PORTA_BANCO1}"
 
-#IP_BANCO2 = os.getenv('IP_BANCO2', "localhost")
-IP_BANCO2 = os.getenv('IP_BANCO2', "0.0.0.0")
+IP_BANCO2 = os.getenv('IP_BANCO2', "localhost")
+#IP_BANCO2 = os.getenv('IP_BANCO2', "0.0.0.0")
 NOME_BANCO2 = os.getenv('NOME_BANCO2', 'Banco 2') 
 PORTA_BANCO2 = os.getenv('PORTA_BANCO2', '2527')
 URL_BANCO2 = f"http://{IP_BANCO2}:{PORTA_BANCO2}"
 
-#IP_BANCO3 = os.getenv('IP_BANCO3', "localhost")
-IP_BANCO3 = os.getenv('IP_BANCO3', "0.0.0.0")
+IP_BANCO3 = os.getenv('IP_BANCO3', "localhost")
+#IP_BANCO3 = os.getenv('IP_BANCO3', "0.0.0.0")
 NOME_BANCO3 = os.getenv('NOME_BANCO3', 'Banco 3') 
 PORTA_BANCO3 = os.getenv('PORTA_BANCO3', '2529')
 URL_BANCO3 = f"http://{IP_BANCO3}:{PORTA_BANCO3}"
